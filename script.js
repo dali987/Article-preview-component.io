@@ -1,13 +1,13 @@
 const shareBtn = document.querySelector(".share-btn");
 const shareBar = document.querySelector(".share-bar");
 const shareBarMobile = document.querySelector(".share-bar-mobile");
-const breakingPoint = 1075
+const breakingPoint = 1075;
 
 let active = false;
 
 function openBar(){
     if(active == true){
-        shareBtn.classList.add("btn-active");
+        shareBtn.classList.add("btn-active"); /* button  becomes in the hovered state when the socials are on */
         if (window.innerWidth > breakingPoint){
             shareBar.classList.add("active");
             shareBarMobile.classList.remove("active");
